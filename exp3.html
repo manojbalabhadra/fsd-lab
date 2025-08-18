@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 + CSS Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: yellow;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .internal-style {
+            color: blue;
+            font-size: 18px;
+        }
+        aside {
+            background: #f0f0f0;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:orange;">My Web Page (Inline CSS Example)</h1> <!-- Inline CSS -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">Media</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>HTML5 Semantic Elements</h2>
+            </header>
+            <section>
+                <p class="internal-style">This text is styled using <b>Internal CSS</b>.</p>
+                <p class="external-style">This text is styled using <b>External CSS</b>.</p>
+                <p>Inline, Internal and External CSS all work together!</p>
+            </section>
+            <figure>
+                <img src="https://via.placeholder.com/300" alt="Sample Image">
+                <figcaption>A sample figure with caption</figcaption>
+            </figure>
+        </article>
+
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Learn HTML</a></li>
+                <li><a href="#">Learn CSS</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h2>Embedded Media</h2>
+            <h3>Audio Example:</h3>
+            <audio controls>
+                <source src="sample.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Example:</h3>
+            <video width="400" controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Web Page | Designed with HTML5 & CSS</p>
+    </footer>
+</body>
+</html>
