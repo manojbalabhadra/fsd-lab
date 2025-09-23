@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styles Example</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        div {
+            border: 2px solid black;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p.external {
+            font-size: 18px;
+            color: green;
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: red; text-align: left;">Inline CSS Example</h1>
+    <p>This heading above uses <span style="color: purple; font-weight:bold;">inline styles</span>.</p>
+
+    <div>
+        <h2>Internal CSS Example</h2>
+        <p>The styling for this div and its content is done using internal CSS defined in the &lt;style&gt; tag.</p>
+    </div>
+
+    <h2>External CSS Example</h2>
+    <p class="external">This paragraph uses external-style-like CSS applied via class.</p>
+
+</body>
+</html>
